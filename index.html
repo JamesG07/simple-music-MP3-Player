@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>music-mp3</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="container-bg-image">
+        <div class="backgroun-img">
+          <button id="btn-list">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="M5 31.5v-3h15.3v3Zm0-8.25v-3h23.65v3ZM5 15v-3h23.65v3Zm27.1 27V25.9L43 33.95Z"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="container-list-songs">
+          <ol class="">
+            <li>Michael Land - Monkey Island Theme</li>
+            <li>Michael Land - Monkey Island Theme</li>
+          </ol>
+        </div>
+      </section>
+      <section class="audio-description">
+        <h2>Monkey Island Theme</h2>
+        <p>Michael Land</p>
+        <div class="audio-controls">
+          <button class="btn" id="previous">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="M11 36V12h3v24Zm26 0L19.7 24 37 12Zm-3-12Zm0 6.25v-12.5L24.95 24Z"
+              />
+            </svg>
+          </button>
+
+          <button class="btn inactive" id="pause">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="M28.25 38V10H36v28ZM12 38V10h7.75v28Z" />
+            </svg>
+          </button>
+          <button class="btn">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path d="M16 37.85v-28l22 14Zm3-14Zm0 8.55 13.45-8.55L19 15.3Z" />
+            </svg>
+          </button>
+
+          <button class="btn" id="next">
+            <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
+              <path
+                d="M34 36V12h3v24Zm-23 0V12l17.3 12Zm3-12Zm0 6.25L23.05 24 14 17.75Z"
+              />
+            </svg>
+          </button>
+        </div>
+      </section>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

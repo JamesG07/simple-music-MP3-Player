@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(22, 22, 77);
+    display: grid;
+    place-content: center;
+    margin-top: 4rem;
+}
+
+img {
+    width: 200px;
+    height: auto;
+}
+
+.inactive {
+    display: none;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+}
+
+.container {
+    width: 400px;
+    height: 700px;
+    background-color: #fff;
+}
+
+section .backgroun-img {
+    background-image: url('https://lenguajejs.com/retos/nivel-medio/mp3-player/monkey.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 400px;
+    position: relative;
+    z-index: 8;
+}
+
+section #btn-list {
+    margin-top: 1rem;
+    position: absolute;
+    right: 1rem;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    cursor: pointer;
+}
+
+.container-bg-image {
+    position: relative;
+}
+
+.container-list-songs {
+    position: absolute;
+    background-color: #cfccd9;
+    top: 0;
+    width: 350px;
+    height: auto;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform .5s ease-in;
+    transform: translateX(0px);
+
+
+}
+
+.animation {
+    transition: transform .9s ease-in-out;
+    transform: translateX(400px);
+
+
+}
+
+
+.container-list-songs ol {
+
+    padding: 0;
+}
+
+.container-list-songs li {
+    margin-top: 1rem;
+    padding-bottom: .6rem;
+    border-bottom: 1px solid gray;
+    width: 100%;
+    color: #605f64;
+    cursor: pointer;
+}
+
+.audio-description {
+    text-align: center;
+    margin-top: 4rem;
+}
