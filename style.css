@@ -10,6 +10,12 @@ img {
     height: auto;
 }
 
+a {
+    text-decoration: none;
+    color: #605f64;
+
+}
+
 .inactive {
     display: none;
 }
@@ -91,11 +97,29 @@ section #btn-list {
     padding-bottom: .6rem;
     border-bottom: 1px solid gray;
     width: 100%;
-    color: #605f64;
     cursor: pointer;
 }
 
 .audio-description {
     text-align: center;
     margin-top: 4rem;
+}
+
+.progreess-container {
+    width: 90%;
+    background-color: #605f6486;
+    height: 10px;
+    margin: 0 auto;
+}
+
+.progress {
+    background-color: rgb(22, 60, 141);
+    height: 100%;
+    width: 0;
+}
+
+
+/* buttons */
+.previous {
+    fill: rgba(128, 128, 128, 0.26);
 }

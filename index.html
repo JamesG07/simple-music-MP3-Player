@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <main class="container">
       <section class="container-bg-image">
         <div class="backgroun-img">
           <button id="btn-list">
@@ -20,10 +20,12 @@
           </button>
         </div>
         <div class="container-list-songs">
-          <ol class="">
-            <li>Michael Land - Monkey Island Theme</li>
-            <li>Michael Land - Monkey Island Theme</li>
+          <ol class="ol-list">
+            <!-- <li>Michael Land - Monkey Island Theme</li> -->
           </ol>
+          <template id="templateListSongs">
+            <li><a href="">Michael Land - Monkey Island Theme</a></li>
+          </template>
         </div>
       </section>
       <section class="audio-description">
@@ -33,6 +35,7 @@
           <button class="btn" id="previous">
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
               <path
+                class="previous"
                 d="M11 36V12h3v24Zm26 0L19.7 24 37 12Zm-3-12Zm0 6.25v-12.5L24.95 24Z"
               />
             </svg>
@@ -43,7 +46,7 @@
               <path d="M28.25 38V10H36v28ZM12 38V10h7.75v28Z" />
             </svg>
           </button>
-          <button class="btn">
+          <button class="btn" id="play">
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
               <path d="M16 37.85v-28l22 14Zm3-14Zm0 8.55 13.45-8.55L19 15.3Z" />
             </svg>
@@ -52,13 +55,23 @@
           <button class="btn" id="next">
             <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
               <path
+                class="next"
                 d="M34 36V12h3v24Zm-23 0V12l17.3 12Zm3-12Zm0 6.25L23.05 24 14 17.75Z"
               />
             </svg>
           </button>
         </div>
       </section>
-    </div>
+      <div class="container-audio">
+        <audio
+          src="https://scummbar.com/mi2/MI1-CD/01%20-%20Opening%20Themes%20-%20Introduction.mp3"
+          id="0"
+        ></audio>
+      </div>
+      <section class="progreess-container">
+        <div class="progress" id="progress"></div>
+      </section>
+    </main>
     <script src="main.js"></script>
   </body>
 </html>
